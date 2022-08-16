@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 body a {
@@ -92,6 +92,8 @@ body a {
             height: 100px;
 
             .number {
+                display: flex;
+                justify-content: center;
                     margin-right: 50px;
                     font-size: 15px;
                     margin-top: auto;
@@ -121,6 +123,91 @@ body a {
 
 
         }
+
+        /*      restaurants    */ 
+
+        #menus {
+            background-color: var(--gray);
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px repeat(4, 450px);
+        
+            h3{
+                font-family: 'Shrikhand';
+                font-size: 40px; 
+                padding-left: 20px;
+                padding-top: 80px;
+            }
+
+            .menu {
+                background-color: white;
+                width: 94%;
+                margin: auto;
+                border-radius: 20px;
+            }
+
+            .image-menu {
+                height: 350px;
+                width: 100%;
+                margin: auto;
+                position: relative;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
+                }
+
+                span {
+                    position: absolute;
+                    color: #215749;
+                    top: 30px;
+                    right: 60px;
+                    font-size: 30px;
+                    padding: 10px;
+                    background-color: #99E2D0;
+                }
+            }
+
+            .explicatif-menu {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                width: 100%;
+                color: black;
+
+                .texte {
+                    width: 50%;
+                
+                    .gras {
+                        padding: 20px 0px 0px 20px;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 25px;
+                        padding: 20px 0px 20px 20px;
+                    }
+                }
+
+                .icone-explicatif {
+                    width: 50%;
+
+                    i {
+                        font-size: 35px;
+                        margin-left: 60%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+
+        
+
+        /*         footer      */
 
         footer {
             background-color: burlywood;

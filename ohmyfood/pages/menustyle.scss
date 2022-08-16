@@ -1,0 +1,93 @@
+@import "../libs/reset.scss";
+
+:root {
+    --blue-primary: #0065FC;
+    --blue-light: #DEEBFF;
+    --gray: #F2F2F2;
+    --gray-600: #d9d9d9;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+body a {
+    text-decoration: none;
+
+}
+
+/*          header        */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0px 30px 0px;
+
+        i {
+            margin: auto 0px auto 15px;
+            font-size: 25px;
+        }
+
+        img {
+            margin: auto;
+        }
+    }
+    #menu-complet {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--gray);
+        border-radius: 40px;
+
+        .titre-menu {
+            display: flex;
+            flex-direction: row;
+
+            h1 {
+                font-size: 45px;
+                font-family: 'Shrikhand';
+                padding: 20px 60px 20px 60px;
+            }
+
+            i {
+                margin: auto 0px auto 60px;
+                font-size: 35px;
+            }
+        }
+        h2 {
+            padding-left: 5%;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        hr {
+            width: 45px;
+            color: #99E2D0;
+        }
+
+        .entrees {
+            background-color: white;
+            margin: 30px auto 30px auto;
+            width: 90%;
+            border-radius: 30px;
+
+                .gras {
+                    padding: 20px 0px 10px 20px;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                }
+                p {
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    font-size: 20px;
+                }
+
+                span {
+                    margin-left: 5em;
+                }
+
+            }
+        }
+}

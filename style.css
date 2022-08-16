@@ -53,7 +53,7 @@ td, th {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 body a {
@@ -123,6 +123,8 @@ body a {
     height: 100px;
   }
   #explication .instruction .number {
+    display: flex;
+    justify-content: center;
     margin-right: 50px;
     font-size: 15px;
     margin-top: auto;
@@ -146,6 +148,76 @@ body a {
     margin-bottom: auto;
   }
 
+  /*      restaurants    */
+  #menus {
+    background-color: var(--gray);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px repeat(4, 450px);
+  }
+  #menus h3 {
+    font-family: "Shrikhand";
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 80px;
+  }
+  #menus .menu {
+    background-color: white;
+    width: 94%;
+    margin: auto;
+    border-radius: 20px;
+  }
+  #menus .image-menu {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  #menus .image-menu img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+  #menus .image-menu span {
+    position: absolute;
+    color: #215749;
+    top: 30px;
+    right: 60px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #99E2D0;
+  }
+  #menus .explicatif-menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    color: black;
+  }
+  #menus .explicatif-menu .texte {
+    width: 50%;
+  }
+  #menus .explicatif-menu .texte .gras {
+    padding: 20px 0px 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #menus .explicatif-menu .texte p {
+    font-size: 25px;
+    padding: 20px 0px 20px 20px;
+  }
+  #menus .explicatif-menu .icone-explicatif {
+    width: 50%;
+  }
+  #menus .explicatif-menu .icone-explicatif i {
+    font-size: 35px;
+    margin-left: 60%;
+    margin-top: 30px;
+  }
+
+  /*         footer      */
   footer {
     background-color: burlywood;
   }

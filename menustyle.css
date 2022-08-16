@@ -1,0 +1,127 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+:root {
+  --blue-primary: #0065FC;
+  --blue-light: #DEEBFF;
+  --gray: #F2F2F2;
+  --gray-600: #d9d9d9;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+body a {
+  text-decoration: none;
+}
+
+/*          header        */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 30px 0px;
+  }
+  header i {
+    margin: auto 0px auto 15px;
+    font-size: 25px;
+  }
+  header img {
+    margin: auto;
+  }
+
+  #menu-complet {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    border-radius: 40px;
+  }
+  #menu-complet .titre-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  #menu-complet .titre-menu h1 {
+    font-size: 45px;
+    font-family: "Shrikhand";
+    padding: 20px 60px 20px 60px;
+  }
+  #menu-complet .titre-menu i {
+    margin: auto 0px auto 60px;
+    font-size: 35px;
+  }
+  #menu-complet h2 {
+    padding-left: 5%;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  #menu-complet hr {
+    width: 45px;
+    color: #99E2D0;
+  }
+  #menu-complet .entrees {
+    background-color: white;
+    margin: 30px auto 30px auto;
+    width: 90%;
+    border-radius: 30px;
+  }
+  #menu-complet .entrees .gras {
+    padding: 20px 0px 10px 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  #menu-complet .entrees p {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  #menu-complet .entrees span {
+    margin-left: 5em;
+  }
+}
+
+/*# sourceMappingURL=menustyle.css.map */
